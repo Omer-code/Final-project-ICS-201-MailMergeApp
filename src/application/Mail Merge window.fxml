@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="468.0" prefWidth="528.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainControler">
+   <children>
+      <ImageView fitHeight="534.0" fitWidth="718.0" layoutX="-95.0" layoutY="-31.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-31.60198974609375" AnchorPane.leftAnchor="-95.0" AnchorPane.rightAnchor="-95.0" AnchorPane.topAnchor="-31.0">
+         <image>
+            <Image url="@../../bin/images/Dynamic_Variations.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="40.0" layoutY="401.0" mnemonicParsing="false" onAction="#PDFmaker" text="make PFD file" />
+      <Button layoutX="204.0" layoutY="401.0" mnemonicParsing="false" onAction="#EMAILsender" text="Send email" />
+      <ListView layoutX="7.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="129.0" layoutY="87.0" prefHeight="200.0" prefWidth="300.0" text="Welcome to The Best Mail Merge Application. if you want to manage your contact you should do it before preceding!(Go to MenuBar => Contact => Contact Manager) Close the window to precede " textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>.
+      </Label>
+   </children>
+</AnchorPane>

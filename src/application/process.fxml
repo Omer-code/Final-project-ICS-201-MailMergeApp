@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainControler">
+   <children>
+      <ImageView fitHeight="763.0" fitWidth="1159.0" layoutX="-26.0" layoutY="-67.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-96.0" AnchorPane.leftAnchor="-26.0" AnchorPane.rightAnchor="-64.0" AnchorPane.topAnchor="-67.0">
+         <image>
+            <Image url="@../../bin/images/free-vector-grey-technology-background.jpg" />
+         </image>
+         <effect>
+            <Lighting bumpInput="$null" diffuseConstant="0.95">
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <HBox fillHeight="false" prefHeight="52.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="CreatPDF" maxHeight="40.0" maxWidth="200.0" minHeight="10.0" minWidth="200.0" mnemonicParsing="false" onAction="#PDFmaker" prefHeight="55.0" prefWidth="200.0" text="Create PDF">
+               <HBox.margin>
+                  <Insets left="40.0" right="40.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="SendEmail" disable="true" maxHeight="40.0" maxWidth="200.0" minHeight="10.0" minWidth="200.0" mnemonicParsing="false" onAction="#EMAILsender" prefHeight="55.0" prefWidth="200.0" text="Send Email">
+               <HBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Button layoutX="538.0" layoutY="157.0" mnemonicParsing="false" onAction="#showListView" prefHeight="78.0" prefWidth="314.0" text="View Contacts" />
+      <Label alignment="TOP_LEFT" contentDisplay="TEXT_ONLY" layoutX="115.0" layoutY="165.0" prefHeight="27.0" prefWidth="325.0" text="by Clicking on this buttom ==&gt;" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Label>
+      <Label alignment="TOP_LEFT" contentDisplay="TEXT_ONLY" layoutX="171.0" layoutY="210.0" prefHeight="66.0" prefWidth="213.0" text="You will be Able to View The Contacts " textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Label>
+      <TextField fx:id="Title" layoutX="516.0" layoutY="412.0" prefHeight="31.0" prefWidth="359.0" promptText="Set the Title of the Email message" />
+      <Label fx:id="Account" layoutX="180.0" layoutY="8.0" prefHeight="27.0" prefWidth="510.0" textFill="#89d66f">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Button layoutX="88.0" layoutY="412.0" mnemonicParsing="false" onAction="#RefreshMM" prefHeight="39.0" prefWidth="367.0" text="Set The title to enable sending Email ==&gt;" />
+      <Label fx:id="checkPDF" layoutX="185.0" layoutY="35.0" prefHeight="27.0" prefWidth="510.0" textFill="#89d66f">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
